@@ -41,5 +41,8 @@ var app = new Vue({
       this.clientX = e.clientX;
       this.clientY = e.clientY;
     },
+    handleMouseMoveChild(e){
+      console.log("handleMouseMoveChild",e.target);
+    }
   }
 })
