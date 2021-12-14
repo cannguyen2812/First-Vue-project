@@ -1,0 +1,12 @@
+1. khai báo Vue instance (đối tượng): 
+    var vm = new Vue({
+        data : {}         //thông tin của đối tượng
+
+        methods = {}    // tạo các hàm hỗ trợ trong quá tình tính toán
+    })
+
+2. ràng buộc dữ liệu với các attribute: 
+dùng v-bind.
+    vd: <a v-bind:href="url"> ssdsdsd </a>
+
+3. Sử dụng và khai báo event: 

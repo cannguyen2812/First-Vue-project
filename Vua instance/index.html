@@ -5,18 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vue instance</title>
+    <style>
+      .box {
+        width: 200px ;
+        height: 200px;
+        background: aqua;
+      }
+    </style>
 </head>
 <body>
+    <!-- ví dụ 1 -->
     <!-- <div id="app">
         <p> {{tittle }}</p>
         <h2>{{ say('cẹc') }}</h2>
     </div> -->
 
-    <div id="vd2">
+
+    <!-- ví dụ 2 -->
+    <!-- <div id="vd2">
         <p>{{ foo }}</p>
-        <!-- foo sẽ không được cập nhật! -->
+        foo sẽ không được cập nhật!
         <button @click="foo = 'can'">Cập nhật đi chứ</button>
+      </div> -->
+
+      <!-- ví dụ 3 -->
+      <div id="app">
+        <h1>Count: {{ counter }}</h1>
+        <button v-on:click="bamnut($event,5)">Click Me </button>
+        <div class="box" v-on:mousemove="handleMouseMove">
+          <p>ClientX: {{ clientX }}</p> 
+          <p>ClientY: {{ clientY }}</p>
+        </div>
       </div>
+
+      
+
+      
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
